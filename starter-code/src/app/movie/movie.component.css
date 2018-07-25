@@ -1,0 +1,20 @@
+.singlemovieright {
+    padding: 40px;
+}
+
+.singlemovie {
+    margin: 20px;
+    padding: 20px;
+    line-height: 2;
+}
+
+img {
+    height: 450px;
+    width: auto;
+    margin-left: 40px;
+    border: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+}
