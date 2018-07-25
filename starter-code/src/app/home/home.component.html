@@ -1,3 +1,12 @@
-<p>
-  home works!
-</p>
+<h1>Cinema Paraíso</h1>
+<br>
+<br>
+<br>
+<div class="container">
+  <article class="movie" *ngFor="let movie of movies" [routerLink]="['/movie', movie.id]">
+    <h4>Room {{movie.room}}</h4>
+    <img src="{{movie.poster}}" width="200px">
+    <h3>{{movie.title}}</h3>
+    <a [routerLink]="['/movie', movie.id]" routerLinkActive="router-link-active">Click for details</a> 
+  </article>
+</div>

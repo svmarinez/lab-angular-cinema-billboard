@@ -5,9 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { MoviesService } from './movies.service';
+import { MoviesService } from 'services/movie/movies.service';
 import { HomeComponent } from './home/home.component';
 import { MovieComponent } from './movie/movie.component';
+import { RouterModule } from '@angular/router';
+import { routes } from 'routes/routes';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { MovieComponent } from './movie/movie.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [MoviesService],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { movies } from '../sample-movies';
+import { movies } from 'sample-movies';
 
-interface movieInterface {
+export interface movieInterface {
   id: number;
   title: string;
   poster: string;
@@ -10,7 +10,7 @@ interface movieInterface {
   year: number;
   director: string;
   actors: Array<string>;
-  hours: Array<string>;
+  showingTimes: Array<string>;
   room: number;
 }
 
@@ -20,16 +20,15 @@ export class MoviesService {
 
   constructor() {
     this.movieList = movies;
-    console.log(this.movieList);
+    // console.log(this.movieList);
   }
 
   getMovies() {
-    this.movieList;
+    return this.movieList;
   }
 
   getMovie(id: number) {
-    this.movieList.filter(id => {
-      return {movieInterface: id};
-    });
+    console.log(this.movieList.filter(m => (m.id==id))[0])
+    return this.movieList.filter(m => (m.id==id))[0];
   }
 }

@@ -16,7 +16,7 @@ export const movies = [
       'Clancy Brown',
       'Gil Bellows'
     ],
-    hours: ['17:00', '19:00', '21:00'],
+    showingTimes: ['17:00', '19:00', '21:00'],
     room: 1
   },
   {
@@ -36,7 +36,7 @@ export const movies = [
       'Robert Duvall',
       'Sterling Hayden'
     ],
-    hours: ['17:00', '19:00', '21:00'],
+    showingTimes: ['17:00', '19:00', '21:00'],
     room: 2
   },
   {
@@ -56,7 +56,7 @@ export const movies = [
       'John Cazale',
       'Talia Shire'
     ],
-    hours: ['17:00', '19:00', '21:00'],
+    showingTimes: ['17:00', '19:00', '21:00'],
     room: 3
   },
   {
@@ -76,7 +76,7 @@ export const movies = [
       'Maggie Gyllenhaal',
       'Gary Oldman'
     ],
-    hours: ['17:00', '19:00', '21:00'],
+    showingTimes: ['17:00', '19:00', '21:00'],
     room: 4
   },
   {
@@ -96,7 +96,7 @@ export const movies = [
       'Jonathan Sagall',
       'Embeth Davidtz'
     ],
-    hours: ['17:00', '19:00', '21:00'],
+    showingTimes: ['17:00', '19:00', '21:00'],
     room: 5
   }
 ];
